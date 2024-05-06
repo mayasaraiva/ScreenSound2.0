@@ -1,5 +1,17 @@
 ﻿using ScreenSound.Menus;
 using ScreenSound.Models;
+using OpenAI_API;
+using System;
+
+//var client = new OpenAIAPI("sk-proj-0MyDWtuRYfdkc3NDaNTRT3BlbkFJ5km353fZ8dk3uE8mUQim");
+
+//var chat = client.Chat.CreateConversation();
+
+//chat.AppendSystemMessage("Resuma a banda Ira! Em um parágrafo.Adote um estilo informal.");
+//string resposta = chat.GetResponseFromChatbotAsync().GetAwaiter().GetResult();
+//string resposta = await chat.GetResponseFromChatbotAsync();
+//Console.WriteLine(resposta);
+//System.Threading.Thread.Sleep(1000);
 
 Banda ira = new Banda("Ira!");
 ira.AdicionarNota(new Avaliacao(10));
@@ -64,4 +76,4 @@ void ExibirOpcoesDoMenu()
         Console.WriteLine("Opção inválida");
     }
 }
-ExibirOpcoesDoMenu();
+//ExibirOpcoesDoMenu();
