@@ -9,11 +9,15 @@ Banda beatles = new("The Beatles");
 beatles.AdicionarNota(new Avaliacao(9));
 beatles.AdicionarNota(new Avaliacao(10));
 beatles.AdicionarNota(new Avaliacao(10));
-
+Banda nirvana = new("Nirvana");
+nirvana.AdicionarNota(new Avaliacao(9));
+nirvana.AdicionarNota(new Avaliacao(10));
+nirvana.AdicionarNota(new Avaliacao(10));
 
 Dictionary<string, Banda> bandasRegistradas = new();
 bandasRegistradas.Add(ira.Nome, ira);
 bandasRegistradas.Add(beatles.Nome, beatles);
+bandasRegistradas.Add(nirvana.Nome, nirvana);
 
 Dictionary<int, Menu> opcoes = new();
 opcoes.Add(1, new MenuRegistrarBanda());
